@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>🌈 学习 Vue 源码 | 🌈 程晓辉</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="Personal Website">
+    <link rel="preload" href="/assets/css/0.styles.e23ba8da.css" as="style"><link rel="preload" href="/assets/js/app.567a888e.js" as="script"><link rel="preload" href="/assets/js/2.6e992d99.js" as="script"><link rel="preload" href="/assets/js/29.4f4274fb.js" as="script"><link rel="prefetch" href="/assets/js/10.930aa4da.js"><link rel="prefetch" href="/assets/js/11.a122bb52.js"><link rel="prefetch" href="/assets/js/12.9d1693e1.js"><link rel="prefetch" href="/assets/js/13.6b5144b7.js"><link rel="prefetch" href="/assets/js/14.52621d28.js"><link rel="prefetch" href="/assets/js/15.ef183b35.js"><link rel="prefetch" href="/assets/js/16.98a15fb4.js"><link rel="prefetch" href="/assets/js/17.9888ce2a.js"><link rel="prefetch" href="/assets/js/18.c229ff97.js"><link rel="prefetch" href="/assets/js/19.d7a16498.js"><link rel="prefetch" href="/assets/js/20.42727cd4.js"><link rel="prefetch" href="/assets/js/21.cac23973.js"><link rel="prefetch" href="/assets/js/22.de15a89b.js"><link rel="prefetch" href="/assets/js/23.d6761fdc.js"><link rel="prefetch" href="/assets/js/24.fe409a68.js"><link rel="prefetch" href="/assets/js/25.61dc3d93.js"><link rel="prefetch" href="/assets/js/26.48ec3cc7.js"><link rel="prefetch" href="/assets/js/27.267469e1.js"><link rel="prefetch" href="/assets/js/28.296e39be.js"><link rel="prefetch" href="/assets/js/3.fd94b379.js"><link rel="prefetch" href="/assets/js/30.75ea9500.js"><link rel="prefetch" href="/assets/js/31.48a347f5.js"><link rel="prefetch" href="/assets/js/32.aa88e40d.js"><link rel="prefetch" href="/assets/js/4.b7e6892f.js"><link rel="prefetch" href="/assets/js/5.31c6fa05.js"><link rel="prefetch" href="/assets/js/6.1b5e20b6.js"><link rel="prefetch" href="/assets/js/7.461d2481.js"><link rel="prefetch" href="/assets/js/8.9fb6008e.js"><link rel="prefetch" href="/assets/js/9.2a320b63.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e23ba8da.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">🌈 程晓辉</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/share/" class="nav-link">
+  技术集
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小程序" class="dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Taro/" class="nav-link">
+  Taro
+</a></li><li class="dropdown-item"><!----> <a href="/mpvue/" class="nav-link">
+  mpvue
+</a></li></ul></div></div><div class="nav-item"><a href="/Aboutme/" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/share/" class="nav-link">
+  技术集
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小程序" class="dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Taro/" class="nav-link">
+  Taro
+</a></li><li class="dropdown-item"><!----> <a href="/mpvue/" class="nav-link">
+  mpvue
+</a></li></ul></div></div><div class="nav-item"><a href="/Aboutme/" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>🌈 学习 Vue 源码</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue/studyVue.html#_1、object-defineproperty" class="sidebar-link">1、Object.defineProperty()</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="🌈-学习-vue-源码"><a href="#🌈-学习-vue-源码" class="header-anchor">#</a> 🌈 学习 Vue 源码</h1> <h2 id="_1、object-defineproperty"><a href="#_1、object-defineproperty" class="header-anchor">#</a> 1、Object.defineProperty()</h2> <p><code>Object.defineProperty(obj, prop, desc)</code>的作用就是直接在一个对象上定义一个新属性，或者修改一个已经存在的属性。</p> <ol><li>obj 需要定义属性的当前对象；</li> <li>prop 当前需要定义的属性名；</li> <li>desc 属性描述符；</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>const obj = {};
+let a;
+Object.defineProperty(obj, 'a', {
+    get(){
+        console.log('get val');
+        return a;
+    },
+    set(newVal){
+        console.log('set val:' + newVal);
+        a = newVal;
+    }
+});
+obj.a; // get val
+obj.a = '666'; // set val: 666
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><blockquote><p>vue是不支持低版本浏览器的，比如ie6、7、8，但是如果想兼容怎么办，百度有自己的san.js MVVM框架，原理是检测浏览器是否存在 <code>__defineGetter__</code> 和 <code>__defineSetter__</code>，如果不存在，微软也有自己的 <code>VBScript</code>。</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.567a888e.js" defer></script><script src="/assets/js/2.6e992d99.js" defer></script><script src="/assets/js/29.4f4274fb.js" defer></script>
+  </body>
+</html>
