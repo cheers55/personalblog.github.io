@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>🌈 React 函数式组件优化 | 🌈 程晓辉</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="Personal Website">
+    <link rel="preload" href="/assets/css/0.styles.e23ba8da.css" as="style"><link rel="preload" href="/assets/js/app.34838e22.js" as="script"><link rel="preload" href="/assets/js/2.6e992d99.js" as="script"><link rel="preload" href="/assets/js/9.4e3079aa.js" as="script"><link rel="prefetch" href="/assets/js/10.534ba65f.js"><link rel="prefetch" href="/assets/js/11.6c99339b.js"><link rel="prefetch" href="/assets/js/12.8c35b3a1.js"><link rel="prefetch" href="/assets/js/13.e9155170.js"><link rel="prefetch" href="/assets/js/14.ebdc36eb.js"><link rel="prefetch" href="/assets/js/15.d2cd58db.js"><link rel="prefetch" href="/assets/js/16.be16634b.js"><link rel="prefetch" href="/assets/js/17.0e1389b9.js"><link rel="prefetch" href="/assets/js/18.6e9127ef.js"><link rel="prefetch" href="/assets/js/19.7d70eb89.js"><link rel="prefetch" href="/assets/js/20.6d2ef485.js"><link rel="prefetch" href="/assets/js/21.ada55b26.js"><link rel="prefetch" href="/assets/js/22.672ce98e.js"><link rel="prefetch" href="/assets/js/23.49dd1cc9.js"><link rel="prefetch" href="/assets/js/24.126ef7e0.js"><link rel="prefetch" href="/assets/js/25.8a9975d5.js"><link rel="prefetch" href="/assets/js/26.8a8908be.js"><link rel="prefetch" href="/assets/js/27.9cec2e73.js"><link rel="prefetch" href="/assets/js/28.3b9bba95.js"><link rel="prefetch" href="/assets/js/29.2924c9d5.js"><link rel="prefetch" href="/assets/js/3.fd94b379.js"><link rel="prefetch" href="/assets/js/30.95ba64ac.js"><link rel="prefetch" href="/assets/js/31.f42a9a05.js"><link rel="prefetch" href="/assets/js/32.55b3b177.js"><link rel="prefetch" href="/assets/js/33.5eae774a.js"><link rel="prefetch" href="/assets/js/4.b7e6892f.js"><link rel="prefetch" href="/assets/js/5.0e0c8c69.js"><link rel="prefetch" href="/assets/js/6.1b5465c2.js"><link rel="prefetch" href="/assets/js/7.49fc90eb.js"><link rel="prefetch" href="/assets/js/8.d2525689.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e23ba8da.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">🌈 程晓辉</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/share/" class="nav-link">
+  技术集
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/react/" class="nav-link router-link-active">
+  React
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小程序" class="dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Taro/" class="nav-link">
+  Taro
+</a></li><li class="dropdown-item"><!----> <a href="/mpvue/" class="nav-link">
+  mpvue
+</a></li></ul></div></div><div class="nav-item"><a href="/Aboutme/" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/share/" class="nav-link">
+  技术集
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/react/" class="nav-link router-link-active">
+  React
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小程序" class="dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Taro/" class="nav-link">
+  Taro
+</a></li><li class="dropdown-item"><!----> <a href="/mpvue/" class="nav-link">
+  mpvue
+</a></li></ul></div></div><div class="nav-item"><a href="/Aboutme/" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>🌈 React 函数式组件优化</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/react/reactFunction.html#_1-react-性能优化思路" class="sidebar-link">1. React 性能优化思路</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/react/reactFunction.html#_2-函数组件优化方法" class="sidebar-link">2. 函数组件优化方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/react/reactFunction.html#_2-1-react-memo-（减少-render-的次数）" class="sidebar-link">2.1 React.memo （减少 render 的次数）</a></li><li class="sidebar-sub-header"><a href="/react/reactFunction.html#_2-2-usecallback-（减少-render-的次数）" class="sidebar-link">2.2 useCallback （减少 render 的次数）</a></li><li class="sidebar-sub-header"><a href="/react/reactFunction.html#_2-3-usememo-（减少计算的量）" class="sidebar-link">2.3 useMemo （减少计算的量）</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="🌈-react-函数式组件优化"><a href="#🌈-react-函数式组件优化" class="header-anchor">#</a> 🌈 React 函数式组件优化</h1> <h2 id="_1-react-性能优化思路"><a href="#_1-react-性能优化思路" class="header-anchor">#</a> 1. React 性能优化思路</h2> <ol><li>减少重新 <code>render</code> 的次数。</li> <li>减少计算的量。主要是减少重复计算，对于函数式组件来说，每次 <code>render</code> 都会重新从头开始执行函数调用。</li></ol> <ul><li>在使用类组件<code>（class）</code>的时候，使用的 <code>React</code> 优化 API 主要是：<code>shouldComponentUpdate</code> 和 <code>PureComponent</code>，都是为了减少重新 <code>render</code> 的次数，主要是减少父组件更新而子组件也更新的情况。</li></ul> <h2 id="_2-函数组件优化方法"><a href="#_2-函数组件优化方法" class="header-anchor">#</a> 2. 函数组件优化方法</h2> <h3 id="_2-1-react-memo-（减少-render-的次数）"><a href="#_2-1-react-memo-（减少-render-的次数）" class="header-anchor">#</a> 2.1 React.memo （减少 render 的次数）</h3> <p>可以减少重新 <code>render</code> 的次数，对标类组件里面的 <code>PureComponent</code>。</p> <p>举个简单的🌰 ：</p> <ul><li>修改父组件 <strong>title</strong> 的时候同时传递给子组件一个 <em>name</em> 值。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 父组件
+import React, { useState } from &quot;react&quot;;
+import ReactDOM from &quot;react-dom&quot;;
+import Child from './child'
+
+function Father() {
+  const [title, setTitle] = useState(&quot;父组件的title&quot;);
+
+  return (
+    &lt;div className=&quot;Father&quot;&gt;
+      &lt;h1&gt;{ title }&lt;/h1&gt;
+      &lt;button onClick={() =&gt; setTitle(&quot;父组件的title改变了&quot;)}&gt;修改父组件的title&lt;/button&gt;
+      &lt;Child name=&quot;父组件传递给子组件的值&quot;&gt;&lt;/Child&gt;
+    &lt;/div&gt;
+  );
+}
+
+const rootElement = document.getElementById(&quot;root&quot;);
+ReactDOM.render(&lt;Father /&gt;, rootElement);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>// 子组件
+import React from &quot;react&quot;;
+
+function Child(props) {
+  console.log(props.name)
+  return &lt;p&gt;{props.name}&lt;/p&gt;
+}
+
+export default Child;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li><p>首次渲染的效果如下：
+<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b7ba075562974ef4a081fdfd39d1166c~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p></li> <li><p>并且在控制台会打印 <strong>&quot;父组件传递给子组件的值&quot;</strong>，说明 <code>Child</code> 组件渲染了。</p></li> <li><p>接下来点击 <strong>修改父组件的title</strong> 这个button，页面会变成：</p></li></ul> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f8080c52b5114ec0a315a26bd3301e48~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p> <ul><li>可见 父组件的<code>title</code> 已经改变了，而且控制台再次打印了 <strong>&quot;父组件传递给子组件的值&quot;</strong>。子组件在 <code>props</code> 没有改变的情况下，再次渲染了。假设子组件如果非常庞大，渲染一次会消耗很多的性能，我们应该尽量减少这个组件的渲染，否则就容易产生性能问题。</li></ul> <p><code>React.memo</code> 在给定相同 <code>props</code> 的情况下渲染相同的结果，并且通过记忆组件渲染结果的方式来提高组件的性能表现。那么上面的例子就可以做如下修改：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 子组件
+import React from &quot;react&quot;;
+
+function Child(props) {
+  console.log(props.name)
+  return &lt;p&gt;{props.name}&lt;/p&gt;
+}
+
+export default React.memo(Child); // 用 React.memo()包裹
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="_2-2-usecallback-（减少-render-的次数）"><a href="#_2-2-usecallback-（减少-render-的次数）" class="header-anchor">#</a> 2.2 useCallback （减少 render 的次数）</h3> <p>根据上面的例子，再改一下需求，父组件新增一个副标题和一个修改副标题的button，然后把修改标题的button放到子组件里。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 父组件
+import React, { useState } from &quot;react&quot;;
+import ReactDOM from &quot;react-dom&quot;;
+import Child from &quot;./child&quot;;
+
+function Father() {
+  const [title, setTitle] = useState(&quot;父组件的title&quot;);
+  const [subtitle, setSubtitle] = useState(&quot;父组件的副title&quot;);
+
+  const callback = () =&gt; {
+    setTitle(&quot;父组件的title改变了&quot;);
+  };
+  return (
+    &lt;div className=&quot;Father&quot;&gt;
+      &lt;h1&gt;{title}&lt;/h1&gt;
+      &lt;h2&gt;{subtitle}&lt;/h2&gt;
+      &lt;button onClick={() =&gt; setSubtitle(&quot;父组件的副title改变了&quot;)}&gt;修改父组件的副title&lt;/button&gt;
+      &lt;Child onClick={callback} name=&quot;父组件传递给子组件的值&quot; /&gt;
+    &lt;/div&gt;
+  );
+}
+
+const rootElement = document.getElementById(&quot;root&quot;);
+ReactDOM.render(&lt;Father /&gt;, rootElement);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>// 子组件
+import React from &quot;react&quot;;
+
+function Child(props) {
+  console.log(props.name);
+  return (
+    &lt;div&gt;
+      &lt;button onClick={props.onClick}&gt;修改父组件的title&lt;/button&gt;
+      &lt;h1&gt;{props.name}&lt;/h1&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default React.memo(Child);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li>首次渲染的效果如下：</li></ul> <p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/24c21323c3e34ca6893e703a97a91746~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p> <ul><li><p>并且在控制台会打印 &quot;父组件传递给子组件的值&quot;，说明 Child 组件渲染了。</p></li> <li><p>接下来点击 修改父组件的副title 这个button，页面会变成：</p></li></ul> <p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/463f4b09a4ad457fab57e9bcf894656d~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p> <ul><li>可见 父组件的副title 已经改变了，而且控制台再次打印了 &quot;父组件传递给子组件的值&quot;。子组件在 props 没有改变的情况下，再次渲染了。但是子组件没有任何变化，那么这次子组件的重新渲染就是多余的，为什么又重新渲染了呢？</li></ul> <p><strong>一个组件重新渲染，一般有3种情况：</strong></p> <ol><li>组件自己的状态改变；</li> <li>父组件重新渲染，导致子组件重新渲染，但是父组件的 <code>props</code> 没有改变；</li> <li>父组件重新渲染，导致子组件重新渲染，但是父组件传递的 <code>props</code> 改变了；</li></ol> <blockquote><p>第一种果断排除，当点击修改副title的时候并没有去改变子组件的状态;</p></blockquote> <blockquote><p>第二种想一下也应该排除，父组件重新渲染了，父组件传递给子组件的 <code>props</code> 没有改变，但是子组件重新渲染了，我们这个时候用 <code>React.memo</code> 来解决了这个问题;</p></blockquote> <blockquote><p>那么应该是第三种情况了，当父组件重新渲染的时候，传递给子组件的 <code>props</code> 发生了改变，传递给子组件的就两个属性，一个是 name，另一个是 onClick ，name 传递的是常量，没有变，变的就是 onClick 了，为什么传递给 onClick 的 callback 函数会发生改变呢？在文章的开头就已经说过了，在函数式组件里每次重新渲染，函数组件都会重头开始重新执行，那么这两次创建的 callback 函数肯定发生了改变，所以导致了子组件重新渲染。</p></blockquote> <p><code>useCallback</code> 在函数没有改变的时候，重新渲染的时候保持两个函数的引用一致，那么上面的例子就可以做如下修改：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 父组件
+import React, { useState, useCallback } from &quot;react&quot;;
+import ReactDOM from &quot;react-dom&quot;;
+import Child from &quot;./child&quot;;
+
+function Father() {
+  const [title, setTitle] = useState(&quot;父组件的title&quot;);
+  const [subtitle, setSubtitle] = useState(&quot;父组件的副title&quot;);
+
+  const callback = () =&gt; {
+    setTitle(&quot;父组件的title改变了&quot;);
+  };
+  
+  // 通过 useCallback 进行记忆 callback，并将记忆的 callback 传递给子组件
+  const _callback = useCallback(callback, []);
+  
+  return (
+    &lt;div className=&quot;Father&quot;&gt;
+      &lt;h1&gt;{title}&lt;/h1&gt;
+      &lt;h2&gt;{subtitle}&lt;/h2&gt;
+      &lt;button onClick={() =&gt; setSubtitle(&quot;父组件的副title改变了&quot;)}&gt;修改父组件的副title&lt;/button&gt;
+      &lt;Child onClick={_callback} name=&quot;父组件传递给子组件的值&quot; /&gt;
+    &lt;/div&gt;
+  );
+}
+
+const rootElement = document.getElementById(&quot;root&quot;);
+ReactDOM.render(&lt;Father /&gt;, rootElement);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h3 id="_2-3-usememo-（减少计算的量）"><a href="#_2-3-usememo-（减少计算的量）" class="header-anchor">#</a> 2.3 useMemo （减少计算的量）</h3> <p><code>useMemo</code> 主要是用来缓存计算量比较大的函数结果，可以避免不必要的重复计算，和 <code>Vue</code> 里面的 <code>computed</code> 有异曲同工的作用，可以减少计算的量。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import React, { useState } from &quot;react&quot;;
+function App() {
+  const [num, setNum] = useState(0);
+
+  // 一个非常耗时的一个计算函数
+  // result 最后返回的值是 49995000
+  function resultFn() {
+    let result = 0;
+    
+    for (let i = 0; i &lt; 10000; i++) {
+      result += i;
+    }
+    
+    console.log(result) // 49995000
+    return result;
+  }
+
+  const resultNum = resultFn();
+
+  return (
+    &lt;div className=&quot;App&quot;&gt;
+      &lt;h1&gt;count：{num}&lt;/h1&gt;
+      &lt;button onClick={() =&gt; setNum(num + resultNum)}&gt;+1&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>如果我们把 <code>i</code> 变成10000000，每次点击 +1 按钮的时候，都会重新渲染且得到的结果都是一样的，这样会对性能造成一些影响，我们可以做如下修改：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import React, { useState, useMemo } from &quot;react&quot;;
+function App() {
+  const [num, setNum] = useState(0);
+
+  // 一个非常耗时的一个计算函数
+  // result 最后返回的值是 49995000
+  function resultFn() {
+    let result = 0;
+    
+    for (let i = 0; i &lt; 10000; i++) {
+      result += i;
+    }
+    
+    console.log(result) // 49995000
+    return result;
+  }
+
+  const resultNum = useMemo(resultFn, []); //这使用了 useMemo
+
+  return (
+    &lt;div className=&quot;App&quot;&gt;
+      &lt;h1&gt;count：{num}&lt;/h1&gt;
+      &lt;button onClick={() =&gt; setNum(num + resultNum)}&gt;+1&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>需要注意两点：</p> <blockquote><p>一、如果没有提供依赖项数组，useMemo 在每次渲染时都会计算新的值；</p></blockquote> <blockquote><p>二、如果计算量很小的计算函数，可以选择不使用 useMemo，避免使用不当造成其他问题；</p></blockquote> <p><a href="www.chengxiaohui.cn">更多技术分享请关注我的个人博客 www.chengxiaohui.cn。欢迎骚扰━(<em>｀∀´</em>)ノ亻!</a></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.34838e22.js" defer></script><script src="/assets/js/2.6e992d99.js" defer></script><script src="/assets/js/9.4e3079aa.js" defer></script>
+  </body>
+</html>
