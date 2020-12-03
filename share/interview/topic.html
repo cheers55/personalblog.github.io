@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>🌈 JS 基础面试题总结 | 🌈 程晓辉</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="Personal Website">
+    <link rel="preload" href="/assets/css/0.styles.10f87ed8.css" as="style"><link rel="preload" href="/assets/js/app.4f7605e3.js" as="script"><link rel="preload" href="/assets/js/2.6e992d99.js" as="script"><link rel="preload" href="/assets/js/29.a70dcbcb.js" as="script"><link rel="prefetch" href="/assets/js/10.b397deec.js"><link rel="prefetch" href="/assets/js/11.fcf7dd2e.js"><link rel="prefetch" href="/assets/js/12.3b5e8fcc.js"><link rel="prefetch" href="/assets/js/13.f2f676b6.js"><link rel="prefetch" href="/assets/js/14.1e80b8a4.js"><link rel="prefetch" href="/assets/js/15.c682766e.js"><link rel="prefetch" href="/assets/js/16.c0f36996.js"><link rel="prefetch" href="/assets/js/17.af2a7d52.js"><link rel="prefetch" href="/assets/js/18.d423742e.js"><link rel="prefetch" href="/assets/js/19.db5641b3.js"><link rel="prefetch" href="/assets/js/20.836c7dcc.js"><link rel="prefetch" href="/assets/js/21.ce7d2a67.js"><link rel="prefetch" href="/assets/js/22.9ec8367d.js"><link rel="prefetch" href="/assets/js/23.72ca0eee.js"><link rel="prefetch" href="/assets/js/24.e0053be6.js"><link rel="prefetch" href="/assets/js/25.575b2395.js"><link rel="prefetch" href="/assets/js/26.74ec0238.js"><link rel="prefetch" href="/assets/js/27.515b0ce8.js"><link rel="prefetch" href="/assets/js/28.08f93ccb.js"><link rel="prefetch" href="/assets/js/3.ccafea9f.js"><link rel="prefetch" href="/assets/js/30.81bd7ca0.js"><link rel="prefetch" href="/assets/js/31.7ed32681.js"><link rel="prefetch" href="/assets/js/32.8296d0f1.js"><link rel="prefetch" href="/assets/js/33.4fecc65a.js"><link rel="prefetch" href="/assets/js/34.034c61d7.js"><link rel="prefetch" href="/assets/js/35.5a4773a6.js"><link rel="prefetch" href="/assets/js/36.afeb533a.js"><link rel="prefetch" href="/assets/js/37.b5b0cc71.js"><link rel="prefetch" href="/assets/js/38.c532bc23.js"><link rel="prefetch" href="/assets/js/4.b7e6892f.js"><link rel="prefetch" href="/assets/js/5.1bc7ea29.js"><link rel="prefetch" href="/assets/js/6.7e088efe.js"><link rel="prefetch" href="/assets/js/7.d7a2b4d4.js"><link rel="prefetch" href="/assets/js/8.0a09d5e2.js"><link rel="prefetch" href="/assets/js/9.c34597e5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.10f87ed8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">🌈 程晓辉</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/share/" class="nav-link router-link-active">
+  技术集
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><a href="/mini/" class="nav-link">
+  小程序
+</a></div><div class="nav-item"><a href="/Aboutme/" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/share/" class="nav-link router-link-active">
+  技术集
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><a href="/mini/" class="nav-link">
+  小程序
+</a></div><div class="nav-item"><a href="/Aboutme/" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>🌈 JS 基础面试题总结</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/share/interview/topic.html#_1-javascript-的数据类型" class="sidebar-link">1. JavaScript 的数据类型</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/share/interview/topic.html#基本数据类型" class="sidebar-link">基本数据类型</a></li><li class="sidebar-sub-header"><a href="/share/interview/topic.html#引用数据类型" class="sidebar-link">引用数据类型</a></li></ul></li><li><a href="/share/interview/topic.html#_2-null-和-undefined-的区别" class="sidebar-link">2. null 和 undefined 的区别</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/share/interview/topic.html#null" class="sidebar-link">null</a></li><li class="sidebar-sub-header"><a href="/share/interview/topic.html#undefined" class="sidebar-link">undefined</a></li></ul></li><li><a href="/share/interview/topic.html#_3-typeof-和-instanceof-的区别" class="sidebar-link">3. typeof 和 instanceof 的区别</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/share/interview/topic.html#_4-为什么是-true？" class="sidebar-link">4. [] !== [] 为什么是 true？</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/share/interview/topic.html#_5-原型链" class="sidebar-link">5. 原型链</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/share/interview/topic.html#_6-new" class="sidebar-link">6. new</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/share/interview/topic.html#_7-this" class="sidebar-link">7. this</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/share/interview/topic.html#_8-apply、call、bind" class="sidebar-link">8. apply、call、bind</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/share/interview/topic.html#模拟实现call和apply" class="sidebar-link">模拟实现call和apply</a></li></ul></li><li><a href="/share/interview/topic.html#_9-闭包" class="sidebar-link">9. 闭包</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/share/interview/topic.html#_10-浅拷贝" class="sidebar-link">10. 浅拷贝</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="🌈-js-基础面试题总结"><a href="#🌈-js-基础面试题总结" class="header-anchor">#</a> 🌈 JS 基础面试题总结</h1> <h2 id="_1-javascript-的数据类型"><a href="#_1-javascript-的数据类型" class="header-anchor">#</a> 1. JavaScript 的数据类型</h2> <h3 id="基本数据类型"><a href="#基本数据类型" class="header-anchor">#</a> 基本数据类型</h3> <div class="language- extra-class"><pre><code>String、Number（浮点类型，基于IEEE 754）、Boolean、null、undefined、Symbol（独一无二）、BigInt（比Number范围更大的整数值）
+</code></pre></div><h3 id="引用数据类型"><a href="#引用数据类型" class="header-anchor">#</a> 引用数据类型</h3> <div class="language- extra-class"><pre><code>Object（Object、Function、Array）
+</code></pre></div><h2 id="_2-null-和-undefined-的区别"><a href="#_2-null-和-undefined-的区别" class="header-anchor">#</a> 2. null 和 undefined 的区别</h2> <h3 id="null"><a href="#null" class="header-anchor">#</a> null</h3> <p><code>null</code>表示&quot;没有对象&quot;，即该处不应该有值。典型用法是：</p> <ol><li>作为函数的参数，表示该函数的参数不是对象；</li> <li>作为对象原型链的终点；</li></ol> <h3 id="undefined"><a href="#undefined" class="header-anchor">#</a> undefined</h3> <p><code>undefined</code>表示&quot;缺少值&quot;，就是此处应该有一个值，但是还没有定义。典型用法是：</p> <ol><li>变量被声明了，但没有赋值（<code>var i;</code>）；</li> <li>对象没有赋值的属性（<code>var obj = {}; console.log(obj.name);</code>）；</li> <li>调用函数时，应该提供的参数没有提供（<code>function fun(obj){ console.log(x); }; fun();</code>）；</li> <li>函数没有返回值时（<code>var x = fun(); x;</code>）；</li></ol> <h2 id="_3-typeof-和-instanceof-的区别"><a href="#_3-typeof-和-instanceof-的区别" class="header-anchor">#</a> 3. typeof 和 instanceof 的区别</h2> <table><thead><tr><th style="text-align:left;"><strong>typeof</strong></th> <th style="text-align:left;"><strong>instanceof</strong></th> <th style="text-align:left;"><strong>Object.prototype.toString().call()</strong></th></tr></thead> <tbody><tr><td style="text-align:left;">用来判断基本数据类型</td> <td style="text-align:left;">用来判断左边构造函数的 prototype 属性是否存在右边对象的原型链上</td> <td style="text-align:left;">是对象的一个原生原型拓展函数，用来精确的区分数据类型</td></tr></tbody></table> <h2 id="_4-为什么是-true？"><a href="#_4-为什么是-true？" class="header-anchor">#</a> 4. [] !== [] 为什么是 true？</h2> <ul><li>下边是这个表达式为何为<code>true</code>的步骤：</li></ul> <ol><li>[] == ![];</li> <li>[] == false;</li> <li>[] == Number(false);</li> <li>[] == 0;</li> <li>[].toString() == 0;</li> <li>0 == 0;</li></ol> <h2 id="_5-原型链"><a href="#_5-原型链" class="header-anchor">#</a> 5. 原型链</h2> <ul><li>每个函数都有 <code>prototype</code> 属性，该属性指向原型。每个对象都有 <code>__proto__</code> 属性，指向了创建该对象的构造函数的原型，<strong><em>其实这个属性指向了 [[prototype]] ，但是 [[prototype]] 是内部引擎属性，我们并不能访问到</em></strong>。所以用<code>__proto__</code>来访问。对象可以通过 <code>__proto__</code> 来寻找不属于该对象的属性，<code>__proto__</code> 将对象连接起来组成了原型链。</li></ul> <p><img src="/prototype.jpg" alt="原型链"></p> <h2 id="_6-new"><a href="#_6-new" class="header-anchor">#</a> 6. new</h2> <ol><li>新生成了一个对象；</li> <li>链接到原型；</li> <li>绑定 this；</li> <li>返回新对象；</li></ol> <ul><li>对于创建一个对象来说，更推荐使用字面量的方式创建对象。因为你使用 <code>new Object()</code> 的方式创建对象需要通过作用域链一层层找到 <code>Object</code>，但是你使用字面量的方式就没这个问题。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 这个字面量内部也是使用了 new Object()
+const person = { name: cxh };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>对于<code>new</code>来说，还需要注意下运算符优先级。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function Foo() {
+ return this;
+};
+
+Foo.getName = function () {
+ console.log('1');
+};
+
+Foo.prototype.getName = function () {
+ console.log('2');
+};
+
+new Foo.getName(); // -&gt; 1
+new Foo().getName(); // -&gt; 2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li>可以看出<code>new Foo()</code> 的优先级大于 <code>new Foo</code> ，所以对于上述代码来说可以这样划分执行顺序:</li></ul> <ol><li>new (Foo.getName());</li> <li>(new Foo()).getName();</li></ol> <blockquote><p>对于第一个函数来说，先执行了 Foo.getName() ，所以结果为 1；对于后者来说，先执行 new Foo() 产生了一个实例，然后通过原型链找到了 Foo 上的 getName 函数，所以结果为 2。</p></blockquote> <h2 id="_7-this"><a href="#_7-this" class="header-anchor">#</a> 7. this</h2> <ul><li>一句话概括<code>this</code>，谁调用它它就指向谁。为了更好的理解<code>this</code>，做了一个小小的总结：</li></ul> <ol><li>在全局作用域内，this 指向 window；</li> <li>在 class 中，this 指向新创建的类实例；</li> <li>在函数中，分为两种函数。箭头函数，this 指向包裹箭头函数的第一个普通函数。普通函数中又分为两种。new 的方式，this 指向 new 出来的实例。直接调用，this 指向 window。间接调用，this 指向调用它的对象。</li></ol> <h2 id="_8-apply、call、bind"><a href="#_8-apply、call、bind" class="header-anchor">#</a> 8. apply、call、bind</h2> <ul><li>都是为了解决改变<code>this</code>的指向。这三个函数的第一个参数都是<code>this</code>的指向对象，第二个参数差别就来了：</li></ul> <table><thead><tr><th style="text-align:left;"><strong>call</strong></th> <th style="text-align:left;"><strong>apply</strong></th> <th style="text-align:left;"><strong>bind</strong></th></tr></thead> <tbody><tr><td style="text-align:left;">后续参数用<code>,</code>号分隔，可传多个参数</td> <td style="text-align:left;">后续参数用数组进行传参</td> <td style="text-align:left;">和<code>call</code>的传参方式一致，但是会返回新的绑定函数，必须调用才会被执行</td></tr></tbody></table> <div class="language- line-numbers-mode"><pre class="language-text"><code>const person = {
+ value: 1
+};
+function getValue(name, age) {
+    console.log(name);
+    console.log(age);
+    console.log(this.value);
+};
+getValue.call(person, 'cxh', '18');
+getValue.apply(person, ['cxh', '18']);
+getValue.bind(person, 'cxh', '18')();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="模拟实现call和apply"><a href="#模拟实现call和apply" class="header-anchor">#</a> 模拟实现call和apply</h3> <ul><li>可以从以下几点来考虑如何实现：</li></ul> <ol><li>不传入第一个参数，那么默认为<code>window</code>；</li> <li>改变了<code>this</code>指向，让新的对象可以执行该函数;</li></ol> <p><strong>那么思路是否可以变成给新的对象添加一个函数，执行完以后删除。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// call
+Function.prototype._bind = function(context){
+    // 不传入第一个参数，那么默认为window
+    const context = context || window;
+    // 给新的对象添加一个函数，改变this指向
+    context.fn = this;
+    // 将context后面的参数取出来
+    let args = [...arguments].slice(1);
+    // 让新的对象可以执行该函数
+    const result = context.fn(...args);
+    // 执行完以后删除
+    delete context.fn;
+    return result;
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>// apply
+Function.prototype._apply = function(context){
+    const context = context || window;
+    context.fn = this;
+    let result;
+    // 需要判断是否存储第二个参数
+    // 如果存在，就将第二个参数展开
+    if(arguments[1]){
+        result = context.fn(...arguments[1]);
+    } else {
+        result = context.fn();
+    }
+    delete context.fn;
+    return result;
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ul><li>bind实现的思路大致如下：</li></ul> <ol><li>会返回一个新的函数；</li> <li>在 bind() 被调用时，这个新函数的 this 被指定为 bind() 的第一个参数，而其余参数将作为新函数的参数，供调用时使用；</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bind
+Function.prototype._bind = function(context){
+    // 判断当前的this类型必须是函数可以调用
+    if(typeof this !== &quot;function&quot;){
+        throw new TypeError(&quot;试图绑定的内容是不可调用的&quot;);
+    };
+    const _this = this;
+    let args = [...arguments].slice(1);
+    // 返回一个函数
+    return function boundFunc(){
+        // 因为返回了一个函数，我们可以 new boundFunc()，所以需要判断
+        if(this instanceof boundFunc){
+            return new _this(...args, ...arguments);
+        }
+        return _this.apply(context, args.concat(...arguments));
+    }
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="_9-闭包"><a href="#_9-闭包" class="header-anchor">#</a> 9. 闭包</h2> <ul><li>闭包的定义很简单：函数 A 返回了一个函数 B，并且函数 B 中使用了函数 A 的变量，函数 B 就被称为闭包。举个简单的例子：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function A(){
+    let a = 1;
+    return function B(){
+        a++;
+        console.log(a);
+    }
+};
+
+let add = A();
+add(); // -&gt; 2
+add(); // -&gt; 3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><ul><li>为什么<code>函数A</code>已经弹出调用栈，<code>函数B</code>还能引用<code>函数A</code>中的变量。<strong>因为函数 A 中的变量这时候是存储在堆上的</strong>。经典面试题：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>for(var i = 1; i &lt;= 5; i++){
+    setTimeout(function(){
+        console.log(i);
+    }, i*1000);
+}; // 每隔1秒输出一个6，一共5次
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><p>因为 setTimeout 是个异步函数，所有会先把循环全部执行完毕，这时候 i 就是 6 了。</p></blockquote> <ul><li>解决方法有<code>4</code>种，另外一种采用<code>innerHTML</code>就不例举了，自行百度一下：</li></ul> <ol><li>闭包；</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>for(var i = 1; i &lt;= 5; i++){
+    (function(i){
+        setTimeout(function(){
+            console.log(i);
+        }, i*1000);
+    })(i);
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ol start="2"><li>let（块级作用域）；</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>for(let i = 1; i &lt;= 5; i++){
+    setTimeout(function(){
+        console.log(i);
+    }, i*1000);
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ol start="3"><li>setTimeout 的第三个参数；</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>for ( var i=1; i&lt;=5; i++) {
+    setTimeout( function timer(j) {
+        console.log( j );
+    }, i*1000, i);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="_10-浅拷贝"><a href="#_10-浅拷贝" class="header-anchor">#</a> 10. 浅拷贝</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>let a = {
+    age: 1
+};
+let b = a;
+a.age = 2;
+console.log(b.age); // -&gt; 2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>上述例子可以发其中一方改变，另一方也会相应改变。**因为他们指向同一个引用。**我们可以使用<code>两种</code>方法解决这个问题：</li></ul> <ol><li>Object.assign；</li> <li>展开运算符（...）；</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>let a = {
+    age: 1
+};
+let b = Object.assign({}, a);
+a.age = 2;
+console.log(b.age); // -&gt; 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>let a= {
+    age: 1
+}; 
+let b= {...a};
+a.age = 2;
+console.log(b.age); // -&gt; 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>如果我们现在在<code>a对象</code>中再加一层，看看浅拷贝是否还可以解决以上问题：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>let a = {
+    age: 1,
+    jobs: {
+        first: 'alipay'
+    };
+};
+let b = {...a};
+a.jobs.first = 'tencent';
+console.log(b.jobs.first) // -&gt; tencent
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li>我们发现浅拷贝只是解决了第一层的问题，如果接下来的值中还有对象的话，要解决这个问题，我们就需要引入深拷贝了。</li></ul> <blockquote><p>关于深拷贝由于篇幅太长，可以移驾到我的另一篇 <a href="deepClone">深拷贝</a> 去继续探索。</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.4f7605e3.js" defer></script><script src="/assets/js/2.6e992d99.js" defer></script><script src="/assets/js/29.a70dcbcb.js" defer></script>
+  </body>
+</html>
