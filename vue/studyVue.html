@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>🌈 学习 Vue 源码 | 🌈 程晓辉</title>
+    <title>🌈 阅读 Vue2 源码 | 🌈 程晓辉</title>
     <meta name="generator" content="VuePress 1.4.1">
     
     <meta name="description" content="Personal Website">
-    <link rel="preload" href="/assets/css/0.styles.10f87ed8.css" as="style"><link rel="preload" href="/assets/js/app.662c2405.js" as="script"><link rel="preload" href="/assets/js/2.6e992d99.js" as="script"><link rel="preload" href="/assets/js/35.d21e1620.js" as="script"><link rel="prefetch" href="/assets/js/10.5a39e276.js"><link rel="prefetch" href="/assets/js/11.fcf7dd2e.js"><link rel="prefetch" href="/assets/js/12.62cd75c9.js"><link rel="prefetch" href="/assets/js/13.f132abf6.js"><link rel="prefetch" href="/assets/js/14.0b80462c.js"><link rel="prefetch" href="/assets/js/15.c682766e.js"><link rel="prefetch" href="/assets/js/16.6ff631d6.js"><link rel="prefetch" href="/assets/js/17.af2a7d52.js"><link rel="prefetch" href="/assets/js/18.d423742e.js"><link rel="prefetch" href="/assets/js/19.baca05ec.js"><link rel="prefetch" href="/assets/js/20.1a150545.js"><link rel="prefetch" href="/assets/js/21.ce7d2a67.js"><link rel="prefetch" href="/assets/js/22.9ec8367d.js"><link rel="prefetch" href="/assets/js/23.f32cdc2d.js"><link rel="prefetch" href="/assets/js/24.e363bfe0.js"><link rel="prefetch" href="/assets/js/25.ea696d35.js"><link rel="prefetch" href="/assets/js/26.d1e29297.js"><link rel="prefetch" href="/assets/js/27.2a2dc9ee.js"><link rel="prefetch" href="/assets/js/28.43dd1e60.js"><link rel="prefetch" href="/assets/js/29.700cc325.js"><link rel="prefetch" href="/assets/js/3.ccafea9f.js"><link rel="prefetch" href="/assets/js/30.fd673e82.js"><link rel="prefetch" href="/assets/js/31.125ffedf.js"><link rel="prefetch" href="/assets/js/32.a7cad43a.js"><link rel="prefetch" href="/assets/js/33.e49521d2.js"><link rel="prefetch" href="/assets/js/34.5be82793.js"><link rel="prefetch" href="/assets/js/36.3093bc5e.js"><link rel="prefetch" href="/assets/js/37.590c5746.js"><link rel="prefetch" href="/assets/js/38.c532bc23.js"><link rel="prefetch" href="/assets/js/4.b7e6892f.js"><link rel="prefetch" href="/assets/js/5.1bc7ea29.js"><link rel="prefetch" href="/assets/js/6.7b47c2fa.js"><link rel="prefetch" href="/assets/js/7.256a9dd6.js"><link rel="prefetch" href="/assets/js/8.73e48d1c.js"><link rel="prefetch" href="/assets/js/9.dc6f74f1.js">
+    <link rel="preload" href="/assets/css/0.styles.10f87ed8.css" as="style"><link rel="preload" href="/assets/js/app.9d1db6ec.js" as="script"><link rel="preload" href="/assets/js/2.6e992d99.js" as="script"><link rel="preload" href="/assets/js/36.04263c52.js" as="script"><link rel="prefetch" href="/assets/js/10.630668ec.js"><link rel="prefetch" href="/assets/js/11.b6135a70.js"><link rel="prefetch" href="/assets/js/12.113514e5.js"><link rel="prefetch" href="/assets/js/13.f132abf6.js"><link rel="prefetch" href="/assets/js/14.07b9a3d5.js"><link rel="prefetch" href="/assets/js/15.238fba41.js"><link rel="prefetch" href="/assets/js/16.02f18c1a.js"><link rel="prefetch" href="/assets/js/17.951f0f71.js"><link rel="prefetch" href="/assets/js/18.d423742e.js"><link rel="prefetch" href="/assets/js/19.0dc89a44.js"><link rel="prefetch" href="/assets/js/20.63edc3e2.js"><link rel="prefetch" href="/assets/js/21.4005f0f8.js"><link rel="prefetch" href="/assets/js/22.0a4203a7.js"><link rel="prefetch" href="/assets/js/23.72ca0eee.js"><link rel="prefetch" href="/assets/js/24.ebd0ce88.js"><link rel="prefetch" href="/assets/js/25.078cfb17.js"><link rel="prefetch" href="/assets/js/26.f8df5842.js"><link rel="prefetch" href="/assets/js/27.605e44e1.js"><link rel="prefetch" href="/assets/js/28.43dd1e60.js"><link rel="prefetch" href="/assets/js/29.5ddbecfe.js"><link rel="prefetch" href="/assets/js/3.ccafea9f.js"><link rel="prefetch" href="/assets/js/30.fd673e82.js"><link rel="prefetch" href="/assets/js/31.58193ac3.js"><link rel="prefetch" href="/assets/js/32.70dc8d00.js"><link rel="prefetch" href="/assets/js/33.ffe3342e.js"><link rel="prefetch" href="/assets/js/34.45670970.js"><link rel="prefetch" href="/assets/js/35.49655f5e.js"><link rel="prefetch" href="/assets/js/37.84366ba6.js"><link rel="prefetch" href="/assets/js/38.13ace4f0.js"><link rel="prefetch" href="/assets/js/39.183b7540.js"><link rel="prefetch" href="/assets/js/4.b7e6892f.js"><link rel="prefetch" href="/assets/js/5.113dd2ed.js"><link rel="prefetch" href="/assets/js/6.70fe44ab.js"><link rel="prefetch" href="/assets/js/7.256a9dd6.js"><link rel="prefetch" href="/assets/js/8.73e48d1c.js"><link rel="prefetch" href="/assets/js/9.557abcfc.js">
     <link rel="stylesheet" href="/assets/css/0.styles.10f87ed8.css">
   </head>
   <body>
@@ -35,21 +35,87 @@
   小程序
 </a></div><div class="nav-item"><a href="/Aboutme/" class="nav-link">
   关于我
-</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>🌈 学习 Vue 源码</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue/studyVue.html#_1、object-defineproperty" class="sidebar-link">1、Object.defineProperty()</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="🌈-学习-vue-源码"><a href="#🌈-学习-vue-源码" class="header-anchor">#</a> 🌈 学习 Vue 源码</h1> <h2 id="_1、object-defineproperty"><a href="#_1、object-defineproperty" class="header-anchor">#</a> 1、Object.defineProperty()</h2> <p><code>Object.defineProperty(obj, prop, desc)</code>的作用就是直接在一个对象上定义一个新属性，或者修改一个已经存在的属性。</p> <ol><li>obj 需要定义属性的当前对象；</li> <li>prop 当前需要定义的属性名；</li> <li>desc 属性描述符；</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>const obj = {};
-let a;
-Object.defineProperty(obj, 'a', {
-    get(){
-        console.log('get val');
-        return a;
-    },
-    set(newVal){
-        console.log('set val:' + newVal);
-        a = newVal;
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>🌈 阅读 Vue2 源码</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue/studyVue.html#_1-什么是-mvvm-数据双向绑定" class="sidebar-link">1. 什么是 MVVM 数据双向绑定</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue/studyVue.html#_2-监听器（oserver）实现" class="sidebar-link">2. 监听器（Oserver）实现</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue/studyVue.html#_3-订阅器（dep）的实现" class="sidebar-link">3. 订阅器（Dep）的实现</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue/studyVue.html#_4-解析器（compile）" class="sidebar-link">4. 解析器（Compile）</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="🌈-阅读-vue2-源码"><a href="#🌈-阅读-vue2-源码" class="header-anchor">#</a> 🌈 阅读 Vue2 源码</h1> <h2 id="_1-什么是-mvvm-数据双向绑定"><a href="#_1-什么是-mvvm-数据双向绑定" class="header-anchor">#</a> 1. 什么是 MVVM 数据双向绑定</h2> <ul><li>数据变化更新视图，视图变化更新数据。如图：</li></ul> <p><img src="/vue_mvvm.png" alt="mvvm数据双向绑定"></p> <p><code>vue</code> 为了实现数据的双向绑定，共分为<code>5</code>个步骤：</p> <ol><li>实现一个<code>监听器（Oserver）</code>，用来劫持并监听所有属性，如果属性发生变化，就通知订阅者；</li> <li>实现一个<code>订阅器（Dep）</code>，用来收集订阅者，对<code>监听器（Oserver）</code>和<code>订阅器（Dep）</code>统一管理；</li> <li>实现一个<code>订阅者（Watcher）</code>，可以收到属性的变化通知并执行相应的方法，从而更新视图；</li> <li>实现一个<code>解析器（Compile）</code>，可以解析每个节点的相关指令，对模板数据和订阅器进行初始化；</li> <li>实现一个<code>批量管理器（Batcher）</code>，可以批量处理多个订阅者来统一进行更新，防止页面卡顿；</li></ol> <p><img src="/vue_reactive.jpg" alt="vue_reactive"></p> <ul><li>现在我们举一个<code>vue</code>实例，正式开始学习之路。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// vue实例
+const vm = new Vue({
+    el: &quot;#app&quot;,
+    data: {
+        text: &quot;Hello World&quot;
     }
 });
-obj.a; // get val
-obj.a = '666'; // set val: 666
-</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><blockquote><p>vue是不支持低版本浏览器的，比如ie6、7、8，但是如果想兼容怎么办，百度有自己的san.js MVVM框架，原理是检测浏览器是否存在 <code>__defineGetter__</code> 和 <code>__defineSetter__</code>，如果不存在，微软也有自己的 <code>VBScript</code>。</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.662c2405.js" defer></script><script src="/assets/js/2.6e992d99.js" defer></script><script src="/assets/js/35.d21e1620.js" defer></script>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>// MVVM.js
+function Vue(options){
+    // 从vue实例里把数据拿出来
+    this.data = options.data;
+    // 减少作用域链查找的过程
+    var data = this.data;
+    // 监听所有的数据
+    observer(data, this);
+    var id = options.el;
+    var el = ocument.querySelector(id);
+    // 编译dom
+    var dom = new Compile(el, this);
+    el.appendChild(dom);
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="_2-监听器（oserver）实现"><a href="#_2-监听器（oserver）实现" class="header-anchor">#</a> 2. 监听器（Oserver）实现</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>// Observer
+function Observer(data, vm){
+    // 为了监听所有属性，先要循环一下数据
+    Object.keys(data).forEach(function(key){
+        defineReactive(vm, key, data[key]);
+    });
+}
+
+function defineReactive(vm, key, val){
+    var dep = new Dep();
+    // 劫持所有属性，进行set和get
+    Object.defineProperty(vm, key, {
+        get: function(){
+            if(Dep.target){
+                // 收集依赖
+                dep.addSub(Dep.target);
+            }
+            return val;
+        },
+        set: function(newVal){
+            if(val === newVal) return;
+            val = newVal;
+            // 发出通知
+            dep.notify();
+        }
+    })
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><ul><li>通过以上代码我们不难看出，源码一上来对<code>data</code>进行了遍历并利用双向绑定的关键方法<code>Object.defineProperty</code>对数据进行读或者写，并利用<code>Dep（构造器）</code>进行收集依赖和发出通知。</li></ul> <blockquote><p>很多人面试的时候只能回答第一步，简单的说一下<code>Object.defineProperty</code>的用法，一带而过。这或许就是很多前端开始区分不同薪资、不同阶级的分水点。</p></blockquote> <p>上边代码提到了<code>订阅器（Dep）</code>，那它到底是什么呢，上源码。</p> <h2 id="_3-订阅器（dep）的实现"><a href="#_3-订阅器（dep）的实现" class="header-anchor">#</a> 3. 订阅器（Dep）的实现</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>// Dep
+function Dep(){
+    this.subs = [];
+}
+
+Dep.prototype = {
+    addSub: function(sub){
+        // 收集依赖
+        this.subs.push(sub);
+    },
+    notify: function(){
+        this.subs.forEach(function(sub){
+            // 所有依赖它的对象都会被通知
+            sub.update();
+        });
+    }
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><ul><li>简单一看代码，是不是有一种很简单的感觉，简单的你想哭😂，但你还是看不懂，<code>Dep</code>到底是个啥，不着急，接下往下看。</li></ul> <h2 id="_4-解析器（compile）"><a href="#_4-解析器（compile）" class="header-anchor">#</a> 4. 解析器（Compile）</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>// Compile
+function Compile(node, vm){
+    if(node){
+        // 模仿虚拟dom
+        this.$frags = this.nodeToFragment(node, vm);
+        return this.$frags;
+    }
+}
+
+Compile.prototype = {
+    nodeToFragment(node, vm){
+        var _this = this;
+        var frag = docum,
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><blockquote><p>vue是不支持低版本浏览器的，比如ie6、7、8，但是如果想兼容怎么办，百度有自己的<code>san.js</code> MVVM框架，原理是检测浏览器是否存在 <code>__defineGetter__</code> 和 <code>__defineSetter__</code>，如果不存在，微软也有自己的 <code>VBScript</code>。</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.9d1db6ec.js" defer></script><script src="/assets/js/2.6e992d99.js" defer></script><script src="/assets/js/36.04263c52.js" defer></script>
   </body>
 </html>
