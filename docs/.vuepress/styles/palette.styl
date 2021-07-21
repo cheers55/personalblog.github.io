@@ -1,0 +1,141 @@
+.theme-default-content code {
+    background: #F5FFFA !important;
+    color: #3eaf7c !important;
+}
+
+.page {
+    word-break: break-word;
+    line-height: 1.75;
+    font-weight: 400;
+    font-size: 15px;
+    overflow-x: hidden;
+    color: #555;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    background-image: linear-gradient(90deg,rgba(159,219,252,.15) 3%,transparent 0),linear-gradient(1turn,rgba(159,219,252,.15) 3%,transparent 0);
+    background-size: 20px 20px;
+    background-position: 50%;
+}
+
+.page blockquote {
+    margin: 2em 0;
+    padding: 24px 32px;
+    border-left: 4px solid #3eaf7c;
+    background: rgba(144,238,144,.13);
+    position: relative;
+}
+
+.page blockquote > p {
+    margin: 22px 0;
+    letter-spacing: 2px;
+    font-size: 14px;
+    word-spacing: 2px;
+    color: #666;
+}
+
+.page blockquote:before {
+    content: "❝";
+    top: 8px;
+    left: 8px;
+    color: #32CD32;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 700;
+    position: absolute;
+    opacity: .7;
+}
+
+.page blockquote:after {
+    content: "❞";
+    font-size: 30px;
+    position: absolute;
+    right: 8px;
+    bottom: 0;
+    color: #32CD32;
+    opacity: .7;
+}
+
+.theme-default-content:not(.custom) > h2 {
+    display: block;
+    border-bottom: 4px solid #32CD32;
+    position: relative;
+    font-size: 24px;
+    padding: 12px 0 !important;
+    margin: 30px 0 !important;
+    color: #3eaf7c;
+}
+
+.theme-default-content:not(.custom) > h2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 10px;
+    border-top-right-radius: 24px;
+    background: linear-gradient(90deg,#fff,#32CD32);
+    max-width: 50vw;
+}
+
+.theme-default-content:not(.custom) > h3 {
+    color: #3eaf7c;
+}
+
+.theme-default-content pre[class*=language-] code {
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #000 !important;
+    background: none !important;
+}
+
+.theme-default-content .extra-class pre {
+    padding: 30px 40px 20px;
+}
+
+.theme-default-content .extra-class pre code {
+    background: none !important;
+}
+
+img {
+    box-shadow: 2px 4px 7px #b3b3b3;
+    border-radius: 4px;
+}
+
+div[class*="language-"] {
+    background: #f8f8f8;
+    box-shadow: 0 0 8px hsla(0,0%,43.1%,.45);
+    border-radius: 4px;
+}
+
+.theme-default-content pre code, .theme-default-content pre[class*="language-"] code {
+    color: #333;
+}
+
+div[class*="language-"].line-numbers-mode::after {
+    background: #f8f8f8;
+}
+
+div[class*="language-"].line-numbers-mode .line-numbers-wrapper {
+    color: #333;
+}
+
+ div[class*="language-"]:before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 100%;
+    margin-bottom: -7px;
+    background: url('https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5497a8ddb9c34454bd2ca66bb4177eb9~tplv-k3u1fbpfcp-watermark.image') no-repeat 20px 0px;
+    background-size: 40px;
+}
+
+table thead{
+    background: #f6f6f6;
+}
+
+tr:nth-child(2n) {
+    background: rgba(144,238,144,0.13) !important;
+}
+
+
